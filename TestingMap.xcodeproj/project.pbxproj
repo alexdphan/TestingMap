@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		3CC69688260521B8002EA4D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC69687260521B8002EA4D1 /* ContentView.swift */; };
 		3CC6968A260521B8002EA4D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC69689260521B8002EA4D1 /* Assets.xcassets */; };
 		3CC6968D260521B8002EA4D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC6968C260521B8002EA4D1 /* Preview Assets.xcassets */; };
+		3CE52922260ECA7800322D27 /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 3CE52921260ECA7800322D27 /* MapboxMaps */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CE52922260ECA7800322D27 /* MapboxMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = TestingMap;
+			packageProductDependencies = (
+				3CE52921260ECA7800322D27 /* MapboxMaps */,
+			);
 			productName = TestingMap;
 			productReference = 3CC69682260521B8002EA4D1 /* TestingMap.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 3CC69679260521B8002EA4D1;
+			packageReferences = (
+				3CE52920260ECA7800322D27 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+			);
 			productRefGroup = 3CC69683260521B8002EA4D1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3CE52920260ECA7800322D27 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = "10.0.0-beta.15";
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3CE52921260ECA7800322D27 /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CE52920260ECA7800322D27 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3CC6967A260521B8002EA4D1 /* Project object */;
 }

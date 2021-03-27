@@ -46,5 +46,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>LSApplicationCategoryType</key>
+	<string>pk.eyJ1IjoiYWxleGRwaGFuIiwiYSI6ImNrbDFwcW5zejA0ZjgydmwxZmFuYjdoaDAifQ.2mHRaXb_AKohWAutvfBbvw</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Shows your location on the map and helps improve OpenStreetMap</string>
 </dict>
 </plist>
